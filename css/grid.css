@@ -1,0 +1,44 @@
+/*****
+A rudimentary grid system with 6 columns. Class names were stolen from Bootstrap. Classes not used in the main project are not implemented.
+******/
+
+
+.l-col-lg-2 {
+    float: left;
+    width: calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+
+.l-col-lg-3 {
+    float: left;
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.l-col-lg-6 {
+    clear: both;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1111px) {
+    .l-col-md-3 {
+        float: left;
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .l-col-md-6 {
+        clear: both;
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .l-col-sm-6 {
+        clear: both;
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}

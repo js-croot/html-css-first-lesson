@@ -1,0 +1,352 @@
+/**************************************************************** MIXINs */
+
+.m-btn {
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+}
+
+.m-btn:active {
+    transform: translateY(1px);
+}
+
+.m-btn:focus {
+    outline: 0;
+}
+
+
+/************************************************************* PAGE   */
+
+body {
+    font-family: 'Prompt', sans-serif;
+    width: 100%;
+    background-color: #dbe2ec;
+}
+
+.l-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+/************************************************************ WIDGETs  */
+
+.widget-list {
+    width: 100%;
+    min-height: 650px;
+}
+
+.widget-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.widget {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-width: 300px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .15);
+}
+
+
+/************************************************************* POSTER */
+
+.poster {
+    font-family: sans-serif;
+    font-size: medium;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    padding: 36px;
+    padding-left: 32px;
+    background-image: url('../img/slider_bkg_look_large.jpg');
+    background-size: cover;
+}
+
+.poster--author {
+    margin-top: 200px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.poster--title {
+    font-size: 3em;
+    font-weight: bold;
+    max-width: 200px;
+    margin-left: -3px;
+    padding-top: 16px;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.poster--read-btn {
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+}
+
+
+/************************************************************ NAV */
+
+.nav {
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    letter-spacing: .1em;
+    color: #2c3137;
+    background-color: #fff;
+}
+
+.nav--close-btn {
+    float: left;
+}
+
+.nav--pagination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav--page-control {
+    position: initial;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 2px;
+    border-radius: 2.5px;
+    background: #bfc1c3;
+}
+
+.nav--page-control.--active {
+    background-color: #2c3137;
+}
+
+.nav--comment-btn {
+    float: right;
+    text-transform: uppercase;
+}
+
+
+/********************************************************** LONGREAD */
+
+.longread {
+    font-family: 'robotoregular', sans-serif;
+    font-size: large;
+    font-variant: normal;
+    line-height: 2em;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 600px;
+    padding: 36px;
+    letter-spacing: .05em;
+    color: #626a73;
+}
+
+.longread--paragraph {
+    padding-bottom: 40px;
+}
+
+.longread--paragraph:first-of-type::first-letter {
+    font-size: 6.5em;
+    float: left;
+    margin: .3em 0;
+    color: #2c3137;
+}
+
+
+/************************************************************ COMMENTS */
+
+.comments {
+    font-size: medium;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 657px;
+    padding: 0 36px;
+}
+
+.comments--header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.comments--title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.comments--close-btn {
+    float: right;
+    opacity: .5;
+}
+
+
+/******************************************************* SINGLE COMMENT   */
+
+.comment {
+    position: relative;
+    font-size: small;
+    font-family: serif;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.comment--read-more-btn {
+    position: absolute;
+    color: grey;
+    bottom: -10px;
+    right: 0;
+}
+
+.comment--userpic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.comment--header {
+    padding-right: 1.5em;
+}
+
+.comment--body {
+    overflow: hidden;
+    max-height: 160px;
+    padding-left: 60px;
+}
+
+.comment--author {
+    display: inline-block;
+    color: #2c3137;
+}
+
+.comment--time {
+    display: inline-block;
+    text-align: right;
+    padding: 6px 0 12px 0;
+    color: #bebfc0;
+}
+
+.comment--time::before {
+    padding: 0 5px;
+    content: '•';
+}
+
+.comment--delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+}
+
+.comment--paragraph {
+    font-size: xx-small;
+    font-size: .95em;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+    letter-spacing: .05em;
+    color: #626a73;
+}
+
+
+/*************************************************************** FORM  */
+
+.form {
+    font-size: x-small;
+    min-width: 300px;
+    padding: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #2c3137;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+}
+
+.form--row {
+    width: 100%;
+}
+
+.form--field {
+    padding: 10px 0;
+}
+
+.form--label {
+    padding-left: 5px;
+}
+
+.form--input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.form--textarea {
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    margin-top: 5px;
+    padding: 5px;
+    resize: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.form--textarea:focus {
+    outline: 0;
+}
+
+.form--submit-btn {
+    width: 100%;
+    height: 30px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #eeeff0;
+    border: 1px solid #191919;
+    border-radius: 5px;
+    background-color: #626a73;
+}
+
+.form--submit-btn:active {
+    transform: translateY(2px);
+}
+
+::-webkit-input-placeholder:-ms-input-placeholder {
+    font-size: .9em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #bebfc0;
+}

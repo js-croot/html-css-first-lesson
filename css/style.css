@@ -1,0 +1,45 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("grid.css");
+@import url("main.css");
+@import url("narrowScreens.css");
+
+
+
+/*
+#My naming conventions (BEM-based)
+
+Block forms a namespace for its elements and modifiers. Elements are "hard namespaced" Their class names *must* include block name as a prefix. Parts of multi-word block and element names are hyphenated. Block name is divided from element name with a double hyphen: 
+
+Blocks:
+
+```css
+.nav
+.widget 
+.comment-form
+```
+Elements:
+```css
+.nav--back-btn
+.menu--item
+```
+Modifiers are "soft namespaced". Modifier name starts with a double hyphen. It should never be used alone. It must always be a part of a combined selector:
+
+Right:
+```css
+.menu--item.--disabled
+```
+Wrong:
+```css
+.--disabled
+```
+Even if some bad guy would write a rule like this, it would be overriden by a correct declaration, because the specificity of a correct selector is higher. 
+
+"Hard namespaced" modifiers, as in canonical BEM are not used for clarity and simplicity of html markup. 
+
+Any helper classes *must* have one-letter prefixes to easily distinguish them from block names. `l-` for layout helpers, such as wrappers or grid columns, `m-` for mixins and so on:
+```css
+.l-main-content
+.m-btn
+```
+*/

@@ -1,0 +1,29 @@
+/*************************************************************** 1111px */
+
+@media only screen and (max-width: 1111px) {
+
+    .comment {
+        display: inline-block;
+        width: 49%;
+    }
+
+}
+
+
+/*************************************************************** 700px */
+
+@media only screen and (max-width: 700px) {
+    .widget {
+      
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    }
+    .comment {
+        display: block;
+        width: 100%;
+    }
+
+    .form--textarea {
+        height: 350px;
+    }
+}
